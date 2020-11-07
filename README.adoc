@@ -1,0 +1,16 @@
+= Othello Implementations
+
+This repository is more of a benchmark of how various languages perform
+when dealing with the zero-sum game of Othello. It's also to showcase
+any improvements between the versions, and at the end of the day, I
+enjoy implementing this game (I blame one of my college professors for the
+original assignment). I also see this a fun/decent way of learning new languages.
+
+Each sub-directory will contain an implementation of the game in that
+specific language. For example, the Rust version will be in the subdir called
+`rust`, and so on. A README will be provided to document which algorithm(s)
+is/are implemented, and if it is multithreaded.
+
+== Benchmarks
+
+TODO: add benchmarks here
