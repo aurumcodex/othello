@@ -11,6 +11,9 @@ specific language. For example, the Rust version will be in the subdir called
 `rust`, and so on. A README will be provided to document which algorithm(s)
 is/are implemented, and if it is multithreaded.
 
+Also, it's to keep from having more than 5 repos that are all effectively the
+same project re-implemented in different languages.
+
 == Benchmarks
 
 TODO: add benchmarks here
