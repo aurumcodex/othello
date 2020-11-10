@@ -1,0 +1,13 @@
+name: othello
+version: 0.1.0
+
+authors:
+  - Nathan Adams <aurumcodex@protonmail.com>
+
+targets:
+  othello_cr:
+    main: src/othello.cr
+
+crystal: 0.35.1
+
+license: MIT
