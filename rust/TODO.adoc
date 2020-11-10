@@ -1,0 +1,37 @@
+= TODO list for `othello_rs`
+
+== implementations
+
+=== `lib.rs`
+- [x] implement main game loop in `play_othello` and derivatives (needs bugfixing, though)
+- [ ] add help message to the `print_help` function (implement in `mod util`)
+- [x] add functions to run the game in ascii mode, colored ascii mode, and full TUI mode
+- [ ] finish `Opts` struct
+** [x] add a `&str` to hold a string for forcing a particular algorithm
+** [ ] add a `&str` or `bool` to hold a value to use either weighted board or max disc based evaluation
+** [x] add a `&str` or set of `bool`s for toggling which runtime fuction to use (or make it compile time based with features)
+** [ ] add a `bool` flag for running a simulation against itself
+** [ ] add validation function(s) for `&str` version of flag for algorithm forcing
+
+=== `othello::bot.rs`
+- [x] implement `generate_alpha_beta_move` (sort of done)
+- [x] implement `generate_negamax_move` (sort of done)
+- [x] implement `make_move` using mentioned functions (sort of done)
+** [ ] implement an "auto" decision for `make_move`
+
+=== `othello::algorithms.rs`
+- [x] implement `alpha_beta` algorithm
+- [x] implement `negamax` algorithm
+- [ ] add other search algorithms (optional)
+
+== project structure
+- [ ] migrate the functions for the different runtime modes into separate module dir (or not)
+- [ ] put functions into own module files within `game` module dir
+- [ ] add documentation for project for project completeness
+- [ ] (completely optional, but consider adding testing modules? (probably won't be necessary))
+= [ ] *IMPORTANT*: consider a bitboard implementation?
+
+== bugfixes
+- [ ] `negamax`: negation with overflow error, need to find out more
+- [ ] display(s): funky things going on there
+// - [ ] 

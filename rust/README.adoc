@@ -1,0 +1,24 @@
+= Othello.rs
+
+continuing with a recurring theme I have, it's yet another othello bot,
+but in Rust this time.
+
+NOTE: this is a reimplementation of an othello bot i made a while back, +
+but hosted on GitLab: https://gitlab.com/aurumcodex/othellors
+
+this is more or less for an educational and curiosity standpoint more than anything.
+i blame my class on A.I. in college for my facination with othello in general.
+
+._algorithms implemented (or to be implemented)_
+- minmax w/ alpha-beta pruning
+- negamax w/ alpha-beta pruning
+- rng move generation
+
+NOTE: view the TODO file to see what remains to be implemented.
+
+== License
+`othello_rs` created and released under the MIT license.
+
+=== Notice
+* uses `colored` - MPL-2.0; source repo found at https://github.com/mackwic/colored.
+* all other dependencies in Cargo.toml are used under MIT license
