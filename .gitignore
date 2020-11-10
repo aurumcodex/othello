@@ -1,0 +1,4 @@
+/rust/target/*
+/crystal/othello
+/nim/nithello
+/golang/gothello

@@ -1,0 +1,40 @@
+# Minimum Tested Rust Version: 1.47.0
+
+[package]
+name = "othello_rs"
+version = "0.1.0" # 0.1.0 is base implementation, sequential evaluation, no parallelism
+authors = ["aurumcodex <aurumcodex@protonmail.com>"]
+edition = "2018"
+license = "MIT"
+publish = false # not planning on hosting this on any crate registries
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+once_cell = "1"
+pico-args = "0.3"
+rand = "0.7"
+# optional deps
+colored = { version = "2", optional = true }
+rayon = { version = "1.5", optional = true }
+termion = { version = "*", optional = true }
+
+[target.'cfg(not(target_env = "msvc"))'.dependencies]
+jemallocator = "0.3"
+
+[profile.dev]
+lto = "thin"
+opt-level = 2
+
+[profile.release]
+lto = "thin"
+opt-level = 3
+
+[features]
+default = ["ascii", "sequential"] # will set this to have deps on "parallel" and "tui" later
+
+sequential = []      # disable parallel evaluation
+ascii = ["colored/no-color"] # no deps required other than ones listed w/out "optional" key
+parallel = ["rayon"] # enable parallel move evaluation for bot
+color = ["colored"]  # enable colorized ascii output (with no tui application)
+tui = ["termion"]    # enable full game display via tui
