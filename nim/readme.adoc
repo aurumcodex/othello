@@ -1,0 +1,8 @@
+= Nithello
+
+an implementation of Othello, but written in Nim.
+
+.algorithms implemented
+* minmax w/ alpha-beta pruning
+* negamax (w/ alpha-beta pruning)
+* rng move generation
