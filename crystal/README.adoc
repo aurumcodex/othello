@@ -1,0 +1,7 @@
+= Othello.cr
+
+a crystal implementation of the game Othello.
+
+due to crystal-lang also being compiled with LLVM support, i want to see
+if it's LLVM that's causing a slow down in the rust implementation, or if
+it's just Rust's compiler that makes it slow.
