@@ -1,0 +1,19 @@
+= TODO stuff
+
+== General
+- [ ] import `"colors"` go library
+** [ ] use `colors` library
+- [x] set up Player struct(s)
+- [x] make the bot move generation not as verbose and condensed from the Rust implementation
+- [ ] write tests for the things that need tests
+
+== Implementations
+- [x] implement Alpha-Beta searching
+- [x] implement Random move generation
+- [ ] implement Beam searching
+- [ ] implement timer(s)?
+- [ ] implement basic tui
+** [ ] implement more advanced/user friendly tui
+
+== Bugfixes
+- [ ] `critical`: need to fix board and player initialization

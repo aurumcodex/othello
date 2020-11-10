@@ -1,0 +1,4 @@
+= GOthello
+> Pronounced "Go-thello", not "Goth-ello"
+
+An implementation of the game of Othello in Go.
